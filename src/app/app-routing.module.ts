@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: 'codigo', component: CodigoComponent },
   { path: 'instrucciones', component: InstruccionesComponent },
   { path: 'historial', component: HistorialComponent },
+  { path: '**', redirectTo: 'login', pathMatch: 'full' },
 ];
 
 @NgModule({
